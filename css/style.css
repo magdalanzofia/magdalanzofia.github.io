@@ -401,6 +401,7 @@ main { min-height: calc(100vh - var(--nav-h)); }
 }
 
 .bio-section .lead { font-size: 17px; margin-top: 22px; }
+.bio-section > p + p { margin-top: 22px; }
 
 .timeline { list-style: none; }
 
@@ -424,6 +425,16 @@ main { min-height: calc(100vh - var(--nav-h)); }
 .timeline span { color: var(--muted); font-size: 14px; }
 
 .link-list { list-style: none; }
+
+.link-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.link-list li span { color: var(--muted); font-size: 14px; text-align: right; }
 
 .link-list a {
     display: flex;
